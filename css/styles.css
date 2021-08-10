@@ -676,6 +676,10 @@ body {
   box-sizing: border-box;
   border-radius: 50%;
 }
+.btn-close:hover,
+.btn-close:focus {
+  fill: var(--accent-color);
+}
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -788,9 +792,6 @@ body {
   border-radius: 2px;
   border: none;
 }
-.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
-  border: 2px solid var(--accent-color);
-}
 .modal-form-checkbox-label {
   display: flex;
   align-items: center;
@@ -800,6 +801,9 @@ body {
 }
 .modal-form-checkbox-label::before {
   margin-right: 9px;
+}
+.modal-form-label-link {
+  color: var(--accent-color);
 }
 .footer-social-form-head {
   font-weight: bold;
